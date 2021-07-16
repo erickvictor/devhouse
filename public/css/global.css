@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #1E266D;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 210px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  height: 82px;
+}
+
+.link {
+  margin-left: 20px;
+}
+
+.link a {
+  margin-right: 38px;
+  color: #1E266D;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.menu-right {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.menu-right span {
+  padding-right: 34px;
+}
+
+.btn-primary {
+  background-color: #3751FF;
+  border: none;
+  border-radius: 100px;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  color: #455880;
+  padding: 10px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.banner {
+  background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 50%, #F2F9FF 50%);
+}
+
+.wrapper-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  justify-content: center;
+}
+
+.wrapper-banner * {
+  margin-top: 20px;
+}
+
+.wrapper-banner h3 {
+  font-size: 56px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.wrapper-banner h5 {
+  font-size: 18px;
+  color: #455880;
+}
+
+.wrapper-banner button {
+  padding: 10px 35px;
+}
