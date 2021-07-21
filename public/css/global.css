@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #1E266D;
+  font-family: "Roboto", sans-serif;
+  color: #1e266d;
 }
 
 .container {
+  width: 90%;
   max-width: 1600px;
-  margin: 0 210px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(35px / 2);
+  padding-right: calc(35px / 2);
 }
 
 .menu {
@@ -22,7 +26,7 @@ body {
 
 .link a {
   margin-right: 38px;
-  color: #1E266D;
+  color: #1e266d;
   text-decoration: none;
   font-size: 16px;
 }
@@ -39,7 +43,7 @@ body {
 }
 
 .btn-primary {
-  background-color: #3751FF;
+  background-color: #3751ff;
   border: none;
   border-radius: 100px;
   color: white;
@@ -64,7 +68,11 @@ body {
 }
 
 .banner {
-  background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 50%, #F2F9FF 50%);
+  background: linear-gradient(
+    180deg,
+    rgba(242, 249, 255, 0.12) 50%,
+    #f2f9ff 50%
+  );
 }
 
 .wrapper-banner {
@@ -92,4 +100,54 @@ body {
 
 .wrapper-banner button {
   padding: 10px 35px;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+@media (max-width: 950px) {
+  .banner img {
+    display: none;
+  }
+
+  .link {
+    display: none;
+  }
+
+  .menu-right {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+
+  .wrapper-banner {
+    padding: 10px;
+  }
+
+  .wrapper-banner * {
+    margin-top: 40px;
+  }
+
+  .wrapper-banner h3 {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .break {
+    display: none;
+  }
+}
+
+@media (min-width: 950px) {
+  .banner img {
+    display: block;
+  }
 }
