@@ -5,6 +5,13 @@ body {
   color: #1e266d;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -54,6 +61,13 @@ body {
   font-size: 16px;
 }
 
+.btn-primary:hover {
+  background-color: #455880;
+  color: #f2f9ff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .btn-secondary {
   background-color: #fff;
   border: none;
@@ -65,6 +79,12 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+
+.btn-secondary:hover {
+  background-color: #e6e6e6;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .banner {
@@ -183,7 +203,8 @@ body {
   justify-content: space-around;
 }
 
-input[type=text], select {
+input[type="text"],
+select {
   padding: 22px 20px;
   width: 100%;
   margin: 13px 0;
@@ -191,6 +212,16 @@ input[type=text], select {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+select:focus {
+  /* outline: 2px solid #5BB31E; */
+  outline: none !important;
+  border-color: #5bb31e;
+  box-shadow: 0 0 10px #5bb31e;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .fullname {
@@ -211,7 +242,7 @@ input[type=text], select {
 }
 
 .hero-contato {
-  background-color: #3751FF;
+  background-color: #3751ff;
   padding-top: 88px;
   padding-bottom: 115px;
 }
@@ -259,4 +290,28 @@ input[type=text], select {
 
 .contato-footer-left img {
   margin-bottom: 10px;
+}
+
+.chat {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.btn-chat {
+  background-color: #5BB31E;
+  border: none;
+  border-radius: 100px;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.btn-chat:hover {
+  background-color: #2F6607;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
