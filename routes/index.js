@@ -1,26 +1,32 @@
 const express = require("express");
 const path = require("path");
 
+const depoimentos = require("../models/depoimentos");
+
 const routes = express.Router();
 
 routes.get("/", (req, res) => {
-  res.sendFile(path.resolve("views", "index.html"));
+  res.render("index", { title: "Sua empresa vai ser incrível" });
 });
 
 routes.get("/home", (req, res) => {
-  res.sendFile(path.resolve("views", "home.html"));
+  res.render("home");
+});
+
+routes.get("/depoimentos", (req, res) => {
+  res.render("depoimentos", { depoimentos });
 });
 
 routes.get("/contato", (req, res) => {
-  res.sendFile(path.resolve("views", "contato.html"));
+  res.render("contato");
 });
 
 routes.get("/blog", (req, res) => {
-  res.sendFile(path.resolve("views", "blog.html"));
+  res.render("blog");
 });
 
 routes.get("/manutencao", (req, res) => {
-  res.sendFile(path.resolve("views", "manutencao.html"));
+  res.render("manutencao");
 });
 
 module.exports = routes;

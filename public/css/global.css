@@ -88,6 +88,7 @@ body {
 }
 
 .banner {
+  margin-top: 130px;
   background: linear-gradient(
     180deg,
     rgba(242, 249, 255, 0.12) 50%,
@@ -314,4 +315,42 @@ select:focus {
   background-color: #2F6607;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.depoimento-content {
+  margin-top: 130px;
+}
+
+.depoimento-content div {
+  margin: 20px 0;
+  max-width: 650px;
+  display: flex;
+}
+
+.depoimento-content img {
+  width: 40px;
+  height: 40px;
+}
+
+.depoimento-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.depoimento-content p {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.depoimento-content b {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 900;
+}
+
+#box-depoimento {
+  width: 400px;
+  display: block;
+  margin: 0;
 }
