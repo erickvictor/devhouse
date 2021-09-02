@@ -1,21 +1,27 @@
-const { uuid } = require("uuidv4");
+const { v4: generateId } = require("uuid");
 let listaProdutos = [
   {
-    id: uuid(),
-    nome: "website",
-    descricao:
-      "Você não encontrará o mais recente filme de grande sucesso no Etsy, mas certamente encontrará peças de artesanato inovadoras feitas por pessoas em suas casas que você pode comprar para expressar seu geek / fã / artista interior. ",
-    image:
-      "https://hubify.com.br/wp-content/uploads/2017/08/escolher-o-layout-do-site-1080x540.png",
+    id: generateId(),
+    nome: "Site",
+    descricao: "Seu site incrivel",
+    imagem:
+      "https://cdn.w600.comps.canstockphoto.com.br/loja-site-web-produto-conceito-bot%C3%A3o-vetor-cliparte_csp52582154.jpg",
+  },
+  {
+    id: generateId(),
+    nome: "Plataforma",
+    descricao: "Seu site incrivel",
+    imagem:
+      "https://cdn.w600.comps.canstockphoto.com.br/loja-site-web-produto-conceito-bot%C3%A3o-vetor-cliparte_csp52582154.jpg",
   },
 ];
 
-function cadastrarProduto(nome, descricao, image) {
+function cadastrarProduto(nome, descricao, imagem) {
   const novoProduto = {
-    id: uuid(),
+    id: generateId(),
     nome,
     descricao,
-    image,
+    imagem,
   };
   return listaProdutos.push(novoProduto);
 }

@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="/css/reset.css" />
-  <link rel="stylesheet" href="/css/global.css" />
-  <title>devHouse << Admin</title>
-</head>
-<body>
-  <%- include('./../components/header') %>
-  <main>
-    <form>
-      <label>Nome do produto</label>
-      <input type="text" name="nome" />
-      <label>Descrição do produto</label>
-      <input type="text" name="descricao" />
-      <label>Url da imagem</label>
-      <input type="text" name="image" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <title>devHouse << Admin</title>
+  </head>
+  <body>
+    <%- include('./../components/header') %>
+    <main>
+      <form
+        action="/salvar-produto"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <label>Nome do produto</label>
+        <input type="text" name="nome" />
+        <label>Descrição do produto</label>
+        <input type="text" name="descricao" />
+        <label>Url da imagem</label>
+        <input type="text" name="imagem" />
 
-      <button type="submit">Enviar</button>
-    </form>
-  </main>
-</body>
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+  </body>
 </html>
